@@ -37,9 +37,9 @@ public class Lab1 {
         double b = Math.abs(distanceTo(points2, points3));
         double c = Math.abs(distanceTo(points3, points1));
 
-        double perimeter = (a + b + c) / 2;
+        double half_perimeter = (a + b + c) / 2;
 
-        double square = Math.sqrt(perimeter * (perimeter - a) * (perimeter - b) * (perimeter - c));
+        double square = Math.sqrt(half_perimeter * (half_perimeter - a) * (half_perimeter - b) * (half_perimeter - c));
         double scale = Math.pow(10, 2);
 
         return Math.ceil(square * scale) / scale;
