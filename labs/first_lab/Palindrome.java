@@ -1,4 +1,4 @@
-package labs.first_lab;
+package first_lab;
 /**
  * Class Palindrome check if word is a palindrome
  */

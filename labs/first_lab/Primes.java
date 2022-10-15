@@ -1,4 +1,4 @@
-package labs.first_lab;
+package first_lab;
 /**
 *Class Primes check first 100 numbers to be a prime number
 */
