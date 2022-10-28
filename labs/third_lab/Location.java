@@ -30,7 +30,6 @@ public class Location
         }
 
         if (obj instanceof Location) {
-            // Cast other object to Point3d type, then compare.
             Location other = (Location) obj;
 
             if (xCoord == other.xCoord &&
@@ -43,11 +42,10 @@ public class Location
     }
 
     public int hashCode() {
-        int result = 19; // Some prime value
+        int result = 20; 
 
-        // Use another prime value to combine
-        result = 17 * result + (xCoord * 11);
-        result = 23 * result + (yCoord * 13);
+        result = 27 * result + (xCoord * 7);
+        result = 17 * result + (yCoord * 10);
 
         return result;
     }

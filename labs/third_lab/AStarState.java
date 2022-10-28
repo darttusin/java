@@ -44,12 +44,12 @@ public class AStarState
     public Waypoint getMinOpenWaypoint()
     {   
         Waypoint minPoint = null;
-        float minimum = Float.MAX_VALUE;
+        float minValue = Float.MAX_VALUE;
 
         for (Waypoint p : openWaypoints.values()) {
             float costPoint = p.getTotalCost();
-            if (costPoint<minimum) {
-                minimum = costPoint;
+            if (costPoint<minValue) {
+                minValue = costPoint;
                 minPoint = p;
             }
         }
