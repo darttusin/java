@@ -19,7 +19,7 @@ public class SecondTasks {
 
         // System.out.println(isValid("59001"));
 
-        System.out.println(isStrangePair("", ""));
+        // System.out.println(isStrangePair("", ""));
 
         // System.out.println(isPrefix("automation", "auto"));
         // System.out.println(isSuffix("arachnophobia", "phobia"));
