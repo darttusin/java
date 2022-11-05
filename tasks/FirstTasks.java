@@ -1,7 +1,5 @@
-package tasks;
-
 public class FirstTasks {
-    
+
     public static void main(String[] args) {
 
         // System.out.println(remainder(1, 3));
@@ -67,11 +65,15 @@ public class FirstTasks {
     }
 
     private static String operation(float n, float a, float b) {
-          
-        if ((a + b) == n) return "added";
-        if ((a - b) == n) return "substracted";
-        if ((a * b) == n) return "multiplication";
-        if ((a / b) == n) return "divinded";
+
+        if ((a + b) == n)
+            return "added";
+        if ((a - b) == n)
+            return "substracted";
+        if ((a * b) == n)
+            return "multiplication";
+        if ((a / b) == n)
+            return "divinded";
         return "none";
 
     }
@@ -85,8 +87,8 @@ public class FirstTasks {
     private static Integer addUpTo(int num) {
         int sum;
         sum = 0;
-        for (int i=1; i <= num; i++) {
-                sum += i;
+        for (int i = 1; i <= num; i++) {
+            sum += i;
         }
         return sum;
     }
@@ -94,22 +96,24 @@ public class FirstTasks {
     private static Integer nextEdge(int a, int b) {
         return (a + b - 1);
     }
-    
+
     private static Integer sumOfCubes(int[] numbers) {
         int sum;
         sum = 0;
 
-        for (int i=0; i < numbers.length; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             sum += Math.pow(numbers[i], 3);
         }
         return sum;
     }
 
     private static boolean abcMath(int a, int b, int c) {
-        for (int i=0; i<b; i++) {
+        for (int i = 0; i < b; i++) {
             a *= 2;
         }
-        if (a % c == 0) return true; 
-        else return false;
-    }    
+        if (a % c == 0)
+            return true;
+        else
+            return false;
+    }
 }
